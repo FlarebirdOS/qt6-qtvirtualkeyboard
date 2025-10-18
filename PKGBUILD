@@ -1,6 +1,6 @@
 pkgname=qt6-qtvirtualkeyboard
-pkgver=6.9.2
-pkgrel=1
+pkgver=6.10.0
+pkgrel=2
 pkgdesc="Virtual keyboard framework"
 arch=('x86_64')
 url="https://www.qt.io"
@@ -25,7 +25,7 @@ makedepends=(
     'ninja'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(0a906801540e542309f62c02a75befa1e2742393db2948abf72959421c1aa6c7)
+sha256sums=(cdcfa0cc12111fa6d8afba38db3ac45f39e27c41d3feabca28e63667f8d467d7)
 
 build() {
     cd ${pkgname#*-}
